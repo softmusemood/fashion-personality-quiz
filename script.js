@@ -39,18 +39,18 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
     } else if (scores.D === max) {
       result = `
         <h2>💼 The Sleek Professional</h2>
-        <img src="images/the-sleek-professional.png" alt="The Sleek Professional" class="archetype-image" />
+        <img src="images/sleek-professional.png" alt="The Sleek Professional" class="archetype-image" />
         <p>Sharp tailoring and confident minimalism.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-sleek-professional/" target="_blank">View Professional board →</a></p>
-        <a href="images/the-sleek-professional.png" download class="secondary-button">Download Style Card</a>
+        <a href="images/sleek-professional.png" download class="secondary-button">Download Style Card</a>
       `;
     } else {
       result = `
         <h2>🔥 The Rule Breaker</h2>
-        <img src="images/the-rule-breaker.png" alt="The Rule Breaker" class="archetype-image" />
+        <img src="images/rule-breaker.png" alt="The Rule Breaker" class="archetype-image" />
         <p>Fearless creativity and unconventional choices.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-rule-breaker/" target="_blank">View Rule Breaker board →</a></p>
-        <a href="images/the-rule-breaker.png" download class="secondary-button">Download Style Card</a>
+        <a href="images/rule-breaker.png" download class="secondary-button">Download Style Card</a>
       `;
     }
   
