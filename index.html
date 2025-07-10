@@ -1,92 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Personality Quiz - Discover Your Style Archetype</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Personality Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Landing Page -->
-        <div id="landing-page" class="page active">
-            <div class="hero-section">
-                <h1 class="main-title">Discover Your Fashion Archetype</h1>
-                <p class="subtitle">Uncover your unique style personality through our curated quiz</p>
-                <div class="archetype-preview">
-                    <div class="archetype-item">Heiress</div>
-                    <div class="archetype-item">Paris Dreamer</div>
-                    <div class="archetype-item">It Girl</div>
-                    <div class="archetype-item">Sleek Professional</div>
-                    <div class="archetype-item">Rule Breaker</div>
-                </div>
-                <button id="start-quiz" class="cta-button">Start Your Style Journey</button>
-            </div>
-        </div>
-
-        <!-- Quiz Page -->
-        <div id="quiz-page" class="page">
-            <div class="quiz-header">
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div id="progress-fill" class="progress-fill"></div>
-                    </div>
-                    <span id="question-counter" class="question-counter">1 of 5</span>
-                </div>
-            </div>
-
-            <div class="quiz-content">
-                <div id="question-container" class="question-container">
-                    <h2 id="question-text" class="question-text"></h2>
-                    <div id="answers-container" class="answers-container"></div>
-                </div>
-                
-                <div class="quiz-navigation">
-                    <button id="prev-button" class="nav-button secondary" style="display: none;">Previous</button>
-                    <button id="next-button" class="nav-button primary" disabled>Next</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Results Page -->
-        <div id="results-page" class="page">
-            <div class="results-content">
-                <div class="results-header">
-                    <h1 class="results-title">Your Fashion Archetype</h1>
-                </div>
-                
-                <div class="archetype-card">
-                    <div id="archetype-icon" class="archetype-icon"></div>
-                    <h2 id="archetype-name" class="archetype-name"></h2>
-                    <p id="archetype-description" class="archetype-description"></p>
-                    
-                    <div class="archetype-details">
-                        <div class="detail-section">
-                            <h3>Your Style Essence</h3>
-                            <p id="style-essence"></p>
-                        </div>
-                        
-                        <div class="detail-section">
-                            <h3>Key Pieces</h3>
-                            <ul id="key-pieces"></ul>
-                        </div>
-                        
-                        <div class="detail-section">
-                            <h3>Color Palette</h3>
-                            <div id="color-palette" class="color-palette"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="results-actions">
-                    <button id="retake-quiz" class="cta-button">Retake Quiz</button>
-                    <button id="share-results" class="secondary-button">Share Results</button>
-                </div>
-            </div>
-        </div>
+  <h1>Discover Your Fashion Archetype</h1>
+  
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What's your ideal weekend activity?</p>
+      <label><input type="radio" name="q1" value="A"> A: Private art exhibit</label>
+      <label><input type="radio" name="q1" value="B"> B: Bakery hopping in Montmartre</label>
+      <label><input type="radio" name="q1" value="C"> C: Girls’ night out</label>
+      <label><input type="radio" name="q1" value="D"> D: Brunch and business planning</label>
+      <label><input type="radio" name="q1" value="E"> E: Pop-up rave downtown</label>
     </div>
 
-    <script src="script.js"></script>
+    <div class="question">
+      <p>2. Choose your dream outfit:</p>
+      <label><input type="radio" name="q2" value="A"> A: Silk blouse & designer trousers</label>
+      <label><input type="radio" name="q2" value="B"> B: Beret, floral dress & vintage boots</label>
+      <label><input type="radio" name="q2" value="C"> C: Mini dress & killer heels</label>
+      <label><input type="radio" name="q2" value="D"> D: Tailored suit & sleek loafers</label>
+      <label><input type="radio" name="q2" value="E"> E: Crop top, combat boots & chains</label>
+    </div>
+
+    <div class="question">
+      <p>3. Pick your fashion icon:</p>
+      <label><input type="radio" name="q3" value="A"> A: Carolyn Bessette-Kennedy</label>
+      <label><input type="radio" name="q3" value="B"> B: Audrey Hepburn meets Pinterest</label>
+      <label><input type="radio" name="q3" value="C"> C: Blair Waldorf</label>
+      <label><input type="radio" name="q3" value="D"> D: Meghan Markle (in Suits)</label>
+      <label><input type="radio" name="q3" value="E"> E: Rihanna</label>
+    </div>
+
+    <div class="question">
+      <p>4. What's in your dream closet?</p>
+      <label><input type="radio" name="q4" value="A"> A: Camel coats, silk dresses, heirloom bags</label>
+      <label><input type="radio" name="q4" value="B"> B: Puffy sleeves, polka dots, bright red lips</label>
+      <label><input type="radio" name="q4" value="C"> C: Statement jackets, fur accents, sparkles</label>
+      <label><input type="radio" name="q4" value="D"> D: Button-downs, neutral tones, power heels</label>
+      <label><input type="radio" name="q4" value="E"> E: Leather, mesh, neon, chaos</label>
+    </div>
+
+    <div class="question">
+      <p>5. What do you want people to feel when they see you?</p>
+      <label><input type="radio" name="q5" value="A"> A: Respect. Quiet envy. Power.</label>
+      <label><input type="radio" name="q5" value="B"> B: Whimsy. Romance. Softness.</label>
+      <label><input type="radio" name="q5" value="C"> C: Style. Mystery. Popularity.</label>
+      <label><input type="radio" name="q5" value="D"> D: Professionalism. Prestige. Clean lines.</label>
+      <label><input type="radio" name="q5" value="E"> E: Energy. Boldness. No rules.</label>
+    </div>
+
+    <button type="submit">See My Result</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
