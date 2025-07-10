@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Personality Quiz - Discover Your Style Archetype</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <div class="hero-section">
+                <h1 class="main-title">Discover Your Fashion Archetype</h1>
+                <p class="subtitle">Uncover your unique style personality through our curated quiz</p>
+                <div class="archetype-preview">
+                    <div class="archetype-item">Heiress</div>
+                    <div class="archetype-item">Paris Dreamer</div>
+                    <div class="archetype-item">It Girl</div>
+                    <div class="archetype-item">Sleek Professional</div>
+                    <div class="archetype-item">Rule Breaker</div>
+                </div>
+                <button id="start-quiz" class="cta-button">Start Your Style Journey</button>
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span id="question-counter" class="question-counter">1 of 5</span>
+                </div>
+            </div>
+
+            <div class="quiz-content">
+                <div id="question-container" class="question-container">
+                    <h2 id="question-text" class="question-text"></h2>
+                    <div id="answers-container" class="answers-container"></div>
+                </div>
+                
+                <div class="quiz-navigation">
+                    <button id="prev-button" class="nav-button secondary" style="display: none;">Previous</button>
+                    <button id="next-button" class="nav-button primary" disabled>Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <div class="results-content">
+                <div class="results-header">
+                    <h1 class="results-title">Your Fashion Archetype</h1>
+                </div>
+                
+                <div class="archetype-card">
+                    <div id="archetype-icon" class="archetype-icon"></div>
+                    <h2 id="archetype-name" class="archetype-name"></h2>
+                    <p id="archetype-description" class="archetype-description"></p>
+                    
+                    <div class="archetype-details">
+                        <div class="detail-section">
+                            <h3>Your Style Essence</h3>
+                            <p id="style-essence"></p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Key Pieces</h3>
+                            <ul id="key-pieces"></ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Color Palette</h3>
+                            <div id="color-palette" class="color-palette"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-actions">
+                    <button id="retake-quiz" class="cta-button">Retake Quiz</button>
+                    <button id="share-results" class="secondary-button">Share Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
