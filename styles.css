@@ -71,3 +71,28 @@ button:hover {
 #result a:hover {
   text-decoration: underline;
 }
+.archetype-result {
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.archetype-result h2 {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  color: #b93f78;
+}
+
+.archetype-result .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.archetype-result p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #333;
+}
