@@ -15,17 +15,17 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
     if (scores.A === max) {
       result = `
         <h2>👑 The Heiress</h2>
-        <img src="images/heiress.png" alt="The Heiress" class="archetype-image" />
+        <img src="images/hairess.png" alt="The Heiress" class="archetype-image" />
         <p>Quiet luxury, timeless elegance, Succession energy.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View The Heiress board →</a></p>
-        <a href="images/the-heiress.jpg" download class="secondary-button">Download Style Card</a>
+        <a href="images/hairess.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.B === max) {
       result = `
         <h2>🥐 The Paris Dreamer</h2>
         <img src="images/the-paris-dreamer.png" alt="The Paris Dreamer" class="archetype-image" />
         <p>Romantic vintage charm and effortless chic.</p>
-        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View The Dreamer board →</a></p>
+        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-paris-dreamer/" target="_blank">View The Dreamer board →</a></p>
         <a href="images/the-paris-dreamer.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.C === max) {
@@ -33,7 +33,7 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
         <h2>💋 The It Girl</h2>
         <img src="images/the-it-girl.png" alt="The It Girl" class="archetype-image" />
         <p>Trendsetting style and social media influence.</p>
-        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View It Girl board →</a></p>
+        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-it-girl/" target="_blank">View It Girl board →</a></p>
         <a href="images/the-it-girl.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.D === max) {
