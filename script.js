@@ -15,7 +15,7 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
     if (scores.A === max) {
       result = `
         <h2>👑 The Heiress</h2>
-        <img src="images/the-heiress.jpg" alt="The Heiress" class="archetype-image" />
+        <img src="images/heiress.png" alt="The Heiress" class="archetype-image" />
         <p>Quiet luxury, timeless elegance, Succession energy.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View The Heiress board →</a></p>
         <a href="images/the-heiress.jpg" download class="secondary-button">Download Style Card</a>
@@ -23,34 +23,34 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
     } else if (scores.B === max) {
       result = `
         <h2>🥐 The Paris Dreamer</h2>
-        <img src="images/the-paris-dreamer.jpg" alt="The Paris Dreamer" class="archetype-image" />
+        <img src="images/the-paris-dreamer.png" alt="The Paris Dreamer" class="archetype-image" />
         <p>Romantic vintage charm and effortless chic.</p>
-        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-paris-dreamer/" target="_blank">View The Dreamer board →</a></p>
-        <a href="images/the-paris-dreamer.jpg" download class="secondary-button">Download Style Card</a>
+        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View The Dreamer board →</a></p>
+        <a href="images/the-paris-dreamer.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.C === max) {
       result = `
         <h2>💋 The It Girl</h2>
-        <img src="images/the-it-girl.jpg" alt="The It Girl" class="archetype-image" />
+        <img src="images/the-it-girl.png" alt="The It Girl" class="archetype-image" />
         <p>Trendsetting style and social media influence.</p>
-        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-it-girl/" target="_blank">View It Girl board →</a></p>
-        <a href="images/the-it-girl.jpg" download class="secondary-button">Download Style Card</a>
+        <p><a href="https://www.pinterest.com/SoftMoodMuse/the-heiress/" target="_blank">View It Girl board →</a></p>
+        <a href="images/the-it-girl.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.D === max) {
       result = `
         <h2>💼 The Sleek Professional</h2>
-        <img src="images/the-sleek-professional.jpg" alt="The Sleek Professional" class="archetype-image" />
+        <img src="images/the-sleek-professional.png" alt="The Sleek Professional" class="archetype-image" />
         <p>Sharp tailoring and confident minimalism.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-sleek-professional/" target="_blank">View Professional board →</a></p>
-        <a href="images/the-sleek-professional.jpg" download class="secondary-button">Download Style Card</a>
+        <a href="images/the-sleek-professional.png" download class="secondary-button">Download Style Card</a>
       `;
     } else {
       result = `
         <h2>🔥 The Rule Breaker</h2>
-        <img src="images/the-rule-breaker.jpg" alt="The Rule Breaker" class="archetype-image" />
+        <img src="images/the-rule-breaker.png" alt="The Rule Breaker" class="archetype-image" />
         <p>Fearless creativity and unconventional choices.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-rule-breaker/" target="_blank">View Rule Breaker board →</a></p>
-        <a href="images/the-rule-breaker.jpg" download class="secondary-button">Download Style Card</a>
+        <a href="images/the-rule-breaker.png" download class="secondary-button">Download Style Card</a>
       `;
     }
   
