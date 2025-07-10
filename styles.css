@@ -71,6 +71,7 @@ button:hover {
 #result a:hover {
   text-decoration: underline;
 }
+
 .archetype-result {
   padding: 2rem;
   border-radius: 16px;
@@ -95,4 +96,31 @@ button:hover {
   font-size: 1.1rem;
   margin-top: 1rem;
   color: #333;
+}
+
+.archetype-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.secondary-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border: 2px solid #b93f78;
+  background: transparent;
+  color: #b93f78;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: #b93f78;
+  color: #fff;
 }
