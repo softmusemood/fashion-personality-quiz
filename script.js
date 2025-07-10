@@ -23,10 +23,10 @@ document.getElementById("quizForm").addEventListener("submit", function (e) {
     } else if (scores.B === max) {
       result = `
         <h2>🥐 The Paris Dreamer</h2>
-        <img src="images/the-paris-dreamer.png" alt="The Paris Dreamer" class="archetype-image" />
+        <img src="images/paris-dreamer.png" alt="The Paris Dreamer" class="archetype-image" />
         <p>Romantic vintage charm and effortless chic.</p>
         <p><a href="https://www.pinterest.com/SoftMoodMuse/the-paris-dreamer/" target="_blank">View The Dreamer board →</a></p>
-        <a href="images/the-paris-dreamer.png" download class="secondary-button">Download Style Card</a>
+        <a href="images/paris-dreamer.png" download class="secondary-button">Download Style Card</a>
       `;
     } else if (scores.C === max) {
       result = `
